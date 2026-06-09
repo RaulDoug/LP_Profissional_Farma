@@ -4,7 +4,7 @@ import Home from './pages/Home/Home';
 import Medicamentos from './pages/Medicamentos/Medicamentos';
 import Ofertas from './pages/Ofertas/Ofertas';
 import AboutSubPage from './pages/AboutPage/AboutSubPage';
-import ContatoPage from './pages/contato/ContatoPage';
+import ContatoPage from './pages/Contato/ContatoPage';
 
 function App() {
 
