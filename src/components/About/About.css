@@ -1,0 +1,166 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.2rem;
+}
+
+.about-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-title {
+  font-size: 1.3rem;
+  color: var(--cinza-dark);
+}
+
+.about-title span {
+  color: var(--verde-light);
+}
+
+.about-desc {
+  font-size: 0.95rem;
+  font-weight: 450;
+  color: var(--cinza-dark);
+  padding-bottom: 0.5rem;
+}
+
+.about-link {
+  display: inline-block;
+  color: var(--azul-light);
+  font-size: 0.95rem;
+  font-weight: 450;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--azul-light);
+  border-radius: 20px;
+  width: 35%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-link:active,
+.about-link:hover {
+  color: var(--verde-light);
+  border-color: var(--verde-light);
+  transform: scale(1.01);
+}
+
+.about-destaques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.about-destaque-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--cinza-light);
+  border-radius: 15px;
+  padding: 1.2rem 0.5rem;
+}
+
+.about-destaque-item h3 {
+  color: var(--verde-dark);
+  font-size: 1.6rem;
+}
+
+.about-destaque-item.azul h3 {
+  color: var(--azul-dark);
+}
+
+.about-destaque-item p {
+  color: var(--cinza-dark);
+  font-size: 0.7rem;
+  font-weight: 550;
+}
+
+/* TABLET 768px */
+@media (min-width: 768px) {
+  .about {
+    padding: 1.5rem;
+  }
+
+  .about-title {
+    font-size: 1.4rem;
+  }
+
+  .about-desc {
+    font-size: 1rem;
+  }
+
+  .about-link {
+    font-size: 1rem;
+    width: 20%;
+  }
+
+  .about-destaques {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .about-destaque-item h3 {
+    font-size: 2rem;
+  }
+
+  .about-destaque-item p {
+    font-size: 0.9rem;
+  }
+}
+
+/* DESKTOP 1220px */ 
+@media (min-width: 1220px) {
+  .about {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 0;
+    padding: 1.2rem 2.5rem;
+  }
+
+  .about-top {
+    width: 95%;
+    height: 105%;
+    justify-content: end;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .about-link {
+    font-size: 1rem;
+    width: 30%;
+  }
+
+  .about-destaque-item h3 {
+    font-size: 2.4rem;
+  }
+
+  .about-destaque-item p {
+    font-size: 1rem;
+  }
+}
+
+/* WIDE 1440px */
+@media (min-width: 1440px){
+  .about {
+    padding: 1.2rem 3.8rem;
+  }
+
+  .about-top {
+    width: 90%;
+  }
+
+  .about-destaque-item h3 {
+    font-size: 2.4rem;
+  }
+
+  .about-destaque-item p {
+    font-size: 1rem;
+  }
+}

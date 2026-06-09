@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --verde-dark: #0FA36B;
+  --verde-light: #28B463;
+  --azul-dark: #1E88E5;
+  --azul-light: #4FC3F7;
+  --cinza-light: #e6effc;
+  --branco: #FFFFFF;
+  --preto: #263238;
+  --footer: #122241;
+  --cinza-dark: #4d5253;
+  --cinza-medium: #607D8B;
+
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--branco);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+  background: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+input:focus {
+  outline: none;
+}

@@ -1,0 +1,180 @@
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+    'logo logo'
+    'nav category'
+    'contato socials'
+    'pay pay';
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% repeat(2, 1fr) auto;
+  background-color: var(--footer);
+  border-radius: 15px 15px 0 0;
+  padding: 1rem;
+}
+
+footer * {
+  background: transparent;
+}
+
+footer h2 {
+  font-size: 1rem;
+  font-weight: 550;
+  color: var(--cinza-light);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer a,
+footer p {
+  font-size: 0.9rem;
+  color: var(--cinza-light);
+  display: flex;
+  gap: 0.5rem;
+}
+
+footer a {
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+footer a:hover,
+footer a:active {
+  color: var(--verde-light);
+  transform: scale(1.03);
+}
+
+footer i {
+  color: var(--verde-light);
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-logo {
+  grid-area: logo;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 90%;
+}
+
+.footer-nav {
+  grid-area: nav;
+}
+
+.footer-category {
+  grid-area: category;
+}
+
+.footer-contato {
+  grid-area: contato;
+}
+
+.footer-contato-item i {
+  font-size: 1.2rem;
+}
+
+.footer-socials {
+  grid-area: socials;
+  padding-left: 1rem;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials-list a {
+  width: 40%;
+  height: 50px;
+  transition: 0.2s ease-out;
+}
+
+.footer-socials-list a:hover,
+.footer-socials-list a:active {
+  transform: scale(1.05);
+}
+
+.footer-socials-list i {
+  font-size: 3.5rem;
+}
+
+.footer-pay {
+  grid-area: pay;
+  max-height: 100%;
+}
+
+.footer-pay img {
+  width: 80%;
+}
+
+/* TABLET 768px */
+@media (min-width: 768px) {
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+      'logo nav category'
+      'contato socials pay';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    background-color: var(--footer);
+    border-radius: 15px 15px 0 0;
+    padding: 1rem;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-logo img {
+    width: 80%;
+    padding-top: 1rem;
+  }
+
+  .footer-contato {
+    padding-bottom: 0;
+  }
+
+  .footer-socials {
+    padding-bottom: 0;
+  }
+
+  .footer-socials-list a {
+    width: 25%;
+  }
+
+  .footer-pay {
+    padding-bottom: 0;
+  }
+}
+/* DESKTOP 1220px */ 
+@media (min-width: 1220px) {
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+      'logo nav category contato socials pay';
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    background-color: var(--footer);
+    border-radius: 15px 15px 0 0;
+    padding: 1rem;
+  }
+
+  .footer-logo img {
+    width: 90%;
+    padding-top: 1rem;
+  }
+}

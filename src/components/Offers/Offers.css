@@ -1,0 +1,273 @@
+.offers {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  padding: 1.2rem;
+}
+
+.offers-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offers-title {
+  color: var(--cinza-dark);
+  font-size: 1.2rem;
+}
+
+.offers-title span {
+  color: var(--verde-light);
+}
+
+.offers-link {
+  color: var(--azul-light);
+  font-size: 0.9rem;
+  font-weight: 550;
+  transition: 0.3s ease-out;
+}
+
+.offers-link:active,
+.offers-link:hover {
+  color: var(--verde-light);
+  transform: scale(1.03);
+}
+
+.offers-list-container {
+  display: flex;
+}
+
+.arrow {
+  position: absolute;
+  top: 58%;
+  transform: translateY(-58%);
+  z-index: 997;
+  color: var(--verde-dark);
+  background: var(--branco);
+  border: 1px solid var(--verde-light);
+  border-radius: 50%;
+  transition: 0.5s ease-out;
+}
+
+.arrow i {
+  font-size: 1.6rem;
+  padding: 0.3rem 0.6rem;
+  transition: 0.3s ease-out;
+}
+
+.arrow:active,
+.arrow:hover,
+.arrow i:hover,
+.arrow i:active {
+  color: var(--azul-dark);
+  border-color: var(--azul-light);
+  font-size: 1.7rem;
+}
+
+.arrow.left {
+  left: 6px;
+}
+
+.arrow.right {
+  right: 6px;
+}
+
+.offers-list {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  touch-action: pan-y;
+  width: 100%;
+}
+
+.offers-list:active {
+  cursor: grabbing;
+}
+
+.offer-item {
+  display: grid;
+  grid-template-rows: 68% 32%;
+  min-width: 75vw;
+  height: 350px;
+  padding: 1rem;
+  border: 1px solid var(--cinza-light);
+  border-radius: 10px;
+  gap: 1rem;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.item-img {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 0.5rem;
+}
+
+.item-img img {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  object-fit: contain;
+}
+
+.item-img p {
+  margin: 0.2rem 0 0 0.2rem;
+  padding: 0.2rem;
+  background-color: var(--verde-dark);
+  color: var(--branco);
+  width: 20%;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+.item-desc-top {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.item-desc-top h4 {
+  font-size: 1rem;
+}
+
+.item-desc-top p {
+  font-size: 0.8rem;
+  color: var(--cinza-dark);
+}
+
+.item-desc-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-desc-price {
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: var(--verde-light);
+}
+
+.item-desc-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: 0.3s ease-out;
+}
+
+.item-desc-link p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--cinza-dark);
+  transition: 0.2s ease-out;
+}
+
+.item-desc-link i {
+  font-size: 0.8rem;
+  color: var(--verde-light);
+}
+
+.item-desc-link:active,
+.item-desc-link:hover {
+  transform: scale(1.03);
+}
+
+.item-desc-link p:hover, 
+.item-desc-link p:active {
+  color: var(--verde-light);
+}
+
+/* TABLET 768px */ 
+@media (min-width: 768px) {
+  .offers {
+    padding: 1.5rem;
+  }
+
+  .offer-item  {
+    min-width: 35vw;
+  }
+
+  .arrow.left {
+    left: 8px;
+  }
+
+  .arrow.right {
+    right: 8px;
+  }
+}
+
+/* DESKTOP 1220px */
+@media (min-width: 1220px) {
+  .offers {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .offers-title {
+    font-size: 1.4rem;
+  }
+
+  .offers-link {
+    font-size: 1.1rem;
+  }
+
+  .offer-item  {
+    min-width: 20vw;
+    max-height: 300px;
+  }
+
+  .arrow i {
+    font-size: 2rem;
+    padding: 0.2rem 0.55rem; 
+  }
+
+  .arrow:active,
+  .arrow:hover {
+    color: var(--azul-dark);
+    border-color: var(--azul-light);
+  }
+
+  .arrow i:hover,
+  .arrow i:active {
+    font-size: 2.1rem;
+    padding: 0.21rem 0.56rem; 
+  }
+
+  .arrow.left {
+    left: 15px;
+  }
+
+  .arrow.right {
+    right: 15px;
+  }
+}
+
+/* WIDE 1440px*/
+@media (min-width: 1440px) {
+  .offers {
+    padding: 1.2rem 3.4rem;
+  }
+
+  .offer-item  {
+    min-width: 18vw;
+    max-height: 300px;
+  }
+
+  
+}

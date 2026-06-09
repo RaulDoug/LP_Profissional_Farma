@@ -1,0 +1,165 @@
+.cta {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 75% 25%;
+  gap: 0.5rem;
+  height: 200px;
+  margin: 1rem 1.2rem;
+  padding: 1rem;
+  background-color: var(--cinza-light);
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.cta-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cta-img img {
+  width: 95%;
+  height: 80%;
+}
+
+.cta-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  padding-bottom: 1rem;
+  height: 100%;
+}
+
+.cta-title {
+  font-size: 1.1rem;
+  font-weight: 550;
+  color: var(--verde-light);
+}
+
+.cta-sub {
+  font-size: 0.85rem;
+  color: var(--cinza-dark);
+}
+
+.cta-btn-container {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cta-btn {
+  width: 80%;
+}
+
+.cta-btn i {
+  font-size: 1.5rem;
+}
+
+.cta-btn p {
+  font-size: 1rem;
+}
+
+.cta-map-container {
+  display: none;
+}
+
+/* TABLET 768px */
+@media (min-width: 768px) {
+  .cta {
+    margin: 1rem 1.5rem;
+    height: 300px;
+  }
+
+  .cta-img img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .cta-desc {
+    justify-content: center;
+  }
+
+  .cta-title {
+    font-size: 1.4rem;
+  }
+
+  .cta-sub {
+    font-size: 1.1rem;
+  }
+
+  .cta-btn {
+    width: 60%;
+    height: 50%;
+  }
+
+  .cta-btn i {
+    font-size: 1.8rem;
+  }
+
+  .cta-btn p {
+    font-size: 1.2rem;
+  }
+}
+
+/* DESKTOP 1220px */
+@media (min-width: 1220px) {
+  .cta {
+    display: grid;
+    grid-template-columns: 25% 35% 40%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: 
+      'entregador topo map'
+      'entregador baixo map';
+    height: 300px;
+    margin: 1.2rem 2.5rem;
+  }
+
+  .cta-img {
+    grid-area: entregador;
+  }
+
+  .cta-desc {
+    grid-area: topo;
+    justify-content: end;
+  }
+
+  .cta-title {
+    font-size: 1.6rem;
+  }
+
+  .cta-sub {
+    font-size: 1.2rem;
+  }
+
+  .cta-btn-container {
+    grid-area: baixo;
+    justify-content: start;
+  }
+
+  .cta-btn {
+    width: 65%;
+    height: 45%;
+    transition: 0.3s;
+  }
+
+  .cta-btn:hover {
+    box-shadow: 4px 4px 15px 1px rgba(77,82,83,0.7);
+    transform: scale(1.01);
+  }
+
+  .cta-map-container {
+    display: flex;
+    grid-area: map;
+  }
+}
+
+/* WIDE 1440px */ 
+@media (min-width: 1440px) {
+  .cta {
+    margin: 1.2rem 3.8rem;
+  }
+}

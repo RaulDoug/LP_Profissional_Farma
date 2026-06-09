@@ -1,0 +1,107 @@
+.cta-simple {
+  padding: 1.2rem 0.4rem;
+}
+
+.cta-simple-container {
+  background-color: var(--verde-dark);
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cta-simple-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  color: var(--branco);
+  width: 100%;
+}
+
+.cta-simple-text h2 {
+  font-size: 1.1rem;
+}
+
+.cta-simple-text p {
+  font-size: 0.95rem;
+  font-weight: 450;
+}
+
+.cta-simple-btn {
+  background-color: var(--branco);
+  color: var(--verde-dark);
+  width: 95%;
+  transition: 0.3s ease-out;
+}
+
+.cta-simple-btn:hover,
+.cta-simple-btn>:active {
+  box-shadow: 4px 4px 15px 1px rgba(77,82,83,0.7);
+  transform: scale(1.01);
+}
+
+.cta-simple-btn p {
+  font-size: 1rem;
+}
+
+.cta-simple-btn i {
+  font-size: 1.6rem;
+}
+
+/* TABLET 768px */
+@media (min-width: 768px) {
+  .cta-simple {
+    padding: 1.5rem;
+  }
+
+  .cta-simple-btn {
+    width: 75%;
+    height: 2.5rem;
+    border-radius: 30px;
+  }
+
+  .cta-simple-btn p {
+    font-size: 1.2rem;
+  }
+
+  .cta-simple-btn i {
+    font-size: 1.8rem;
+  }
+}
+
+/* DESKTOP 1220px */ 
+@media (min-width: 1220px) {
+  .cta-simple {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .cta-simple-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+    padding: 1.2rem;
+  }
+
+  .cta-simple-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .cta-simple-text p {
+    font-size: 1.2rem;
+  }
+
+  .cta-simple-btn {
+    width: 90%;
+    height: 2.5rem;
+  }
+
+  .cta-simple-btn p {
+    font-size: 1.2rem;
+  }
+
+  .cta-simple-btn i {
+    font-size: 1.8rem;
+  }
+}

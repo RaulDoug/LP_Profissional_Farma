@@ -1,0 +1,36 @@
+.whats-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: var(--verde-dark);
+  color: var(--branco);
+  gap: 0.5rem;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.whats-btn:active {
+  background-color: var(--azul-dark);
+}
+
+.whats-desktop {
+  display: none;
+}
+
+.whats-btn {
+  font-weight: 550;
+}
+
+
+/* DESKTOP 1220px */
+@media (min-width: 1220px) {
+  .whats-desktop {
+    display: flex;
+    padding: 0.5rem;
+  }
+
+  .whats-btn {
+    font-weight: 450;
+  }
+}
