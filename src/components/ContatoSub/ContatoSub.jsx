@@ -62,15 +62,18 @@ export default function ContatoSub() {
           </li>
         </ul>
       </div>
-      <div className="location-map contato">
-        <img src={locMap} alt="Localização empresa" />
-        <a
-          href="https://maps.app.goo.gl/8FHBecTH1QRGmEsK6"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="location-map-link contato"
-          aria-label="Abrir localização no Google Maps"
-        />
+      <div className="contato-map-container">
+        <h4>Onde nos encontrar</h4>
+        <div className="location-map contato">
+          <img src={locMap} alt="Localização empresa" />
+          <a
+            href="https://maps.app.goo.gl/8FHBecTH1QRGmEsK6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="location-map-link contato"
+            aria-label="Abrir localização no Google Maps"
+          />
+        </div>
       </div>
     </section>
   )

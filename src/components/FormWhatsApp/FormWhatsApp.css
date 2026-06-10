@@ -1,0 +1,470 @@
+.form-whatsapp-container {
+  width: 100%;
+  padding: 1.2rem;
+}
+
+.form-whats-destaque {
+  display: flex;
+  align-items: center;
+  width: 73%;
+  gap: 0.5rem;
+  border-radius: 30px;
+  background-color: rgba(40, 180, 99, 0.1 );
+  padding: 0.2rem 0.5rem;
+  color: var(--verde-light);
+}
+
+.form-whats-destaque i {
+  font-size: 1.25rem;
+  padding-left: 0.2rem;
+  font-weight: 600;
+}
+
+.form-whats-destaque p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form-whats-top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-title {
+  font-size: 2rem;
+  color: var(--preto);
+}
+
+.form-title span {
+  color: var(--verde-light);
+}
+
+.form-desc {
+  color: var(--cinza-dark);
+  font-size: 1.1rem;
+}
+
+.form-img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.form-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.3);
+  object-position: 50% 25%;
+  border-radius: 15px;
+}
+
+.form-list-destaques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.2rem 0;
+}
+
+.form-item-destaque {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  border: 2px solid var(--cinza-light);
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.item-destaque-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--cinza-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-destaque-icon i {
+  color: var(--verde-light);
+  font-size: 1.8rem;
+}
+
+.form-list-destaques p {
+  color: var(--cinza-dark);
+}
+
+.form-whatsapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--cinza-light);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.form-title-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form-title-container  i{
+  color: var(--verde-light);
+  font-size: 2.2rem;
+  font-weight: 550;
+  align-self: center;
+}
+
+.form-title-bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-title-bottom h2 {
+  font-size: 1.15rem;
+}
+
+.form-title-bottom span {
+  color: var(--verde-light);
+}
+
+.form-title-bottom p {
+  font-size: 0.8rem;
+  color: var(--cinza-dark);
+}
+
+.form-inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-inputs-container input {
+  border: none;
+  font-size: 1.2rem;
+  color: var(--cinza-dark);
+}
+
+.form-item-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 2px solid var(--cinza-light);
+  border-radius: 10px;
+  padding: 0.8rem;
+  gap: 0.8rem;
+}
+
+.form-item-container i {
+  font-size: 1.4rem;
+  color: var(--verde-light);
+}
+
+.form-checkbox {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  align-items: self-start;
+}
+
+.form-checkbox input[type="checkbox"] {
+  appearance: none;
+  border: 2px solid #c9d0da;
+  border-radius: 5px;
+  width: 26px;
+  height: 25px;
+  margin-top: 1rem;
+  accent-color: var(--verde-light);
+  color: var(--branco);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.form-checkbox input[type="checkbox"]:checked {
+  background-color: var(--verde-light);
+  border-color: var(--verde-light);
+}
+
+.form-checkbox input[type="checkbox"]:checked::before {
+  content: "✓";
+  color: white;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-3px);
+}
+
+.text-checkbox {
+  width: 98%;
+  font-size: 0.9rem;
+  color: var(--cinza-dark);
+}
+
+.text-checkbox label {
+  width: 100%;
+}
+
+.form-btn {
+  display: flex;
+  padding: 1rem;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  background-color: var(--verde-light);
+  border-radius: 8px;
+  border: none;
+  color: var(--branco);
+  transition: 0.3s ease-in-out;
+}
+
+.form-btn:active,
+.form-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 4px 15px 1px rgba(77,82,83,0.7);
+}
+
+.form-btn i {
+  font-size: 1.6rem;
+}
+
+.form-btn p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.form-message {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-message i {
+  color: var(--verde-light);
+  font-size: 1.4rem;
+}
+
+.form-message p {
+  color: var(--cinza-dark);
+  font-size: 0.9rem;
+}
+
+.item-destaque-only-desktop {
+  display: none;
+}
+
+/* TABLET 768px */
+@media (min-width: 768px) {
+  .form-whatsapp-container {
+    padding: 1.4rem;
+  }
+
+  .form-whats-top-container {
+    display: grid;
+    grid-template-areas: 
+      'texto img'
+      'destaque destaque';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+  }
+
+  .form-text-container {
+    grid-area: texto;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-img-container {
+    grid-area: img;
+    height: 100%;
+  }
+
+  .form-img-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transform: scale(1.6);
+    object-position: -20px 25%;
+  }
+
+  .form-list-destaques {
+    grid-area: destaque;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .form-item-destaque {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-whats-destaque {
+    width: 35%;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .form-title-container  i {
+    font-size: 2.8rem;
+  }
+
+  .form-title-bottom h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-title-bottom p {
+    font-size: 1.1rem;
+  }
+}
+
+/* DESKTOP 1220px */
+@media (min-width: 1220px) {
+  .form-whatsapp-container {
+    padding: 1.4rem;
+  }
+
+  .form-whats-destaque {
+    width: 25%;
+  }
+
+  .form-whats-top-container {
+    display: grid;
+    grid-template-areas: 
+      'texto img img'
+      'destaque destaque destaque';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+  }
+
+  .form-title {
+    font-size: 2.4rem;
+  }
+
+  .form-desc {
+    font-size: 1.2rem;
+  }
+
+  .form-img-container {
+    width: 100%;
+  }
+
+  .form-img-container img {
+    width: 100%;
+    height: 350px;
+    transform: scale(1);
+    object-position: -50px 35%;
+  }
+
+  .form-list-destaques {
+    height: 150px;
+  }
+
+  .form-item-destaque {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .item-destaque-icon {
+    width: 60px;
+    height: 55px;
+  }
+
+  .item-destaque-icon i {
+    font-size: 2.2rem;
+  }
+
+  .item-destaque-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .item-destaque-text-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .item-destaque-only-desktop {
+    display: flex;
+    font-size: 0.95rem;
+    font-weight: 350;
+  }
+
+  .form-whatsapp {
+    display: grid;
+    grid-template-areas: 
+      'title title'
+      'input input'
+      'checkbox btn'
+      'msg msg';
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+  }
+
+  .form-title-container {
+    grid-area: title;
+    justify-content: center;
+  }
+
+  .form-inputs-container {
+    grid-area: input;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .form-checkbox {
+    grid-area: checkbox;
+    grid-template-columns: 6% 94%;
+  }
+
+  .form-btn {
+    grid-area: btn;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .form-message {
+    grid-area: msg;
+    justify-content: center;
+  }
+}
+
+/* WIDE 1440px */
+@media (min-width: 1440px) {
+  .form-whatsapp-container {
+    padding: 1.8rem;
+  }
+
+  .form-img-container img {
+    object-position: -50px 32%;
+  }
+}

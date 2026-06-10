@@ -10,6 +10,7 @@ import Location from '../../components/Location/Location.jsx';
 import CtaSimple from '../../components/CtaSimple/CtaSimple.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import WhatsAppFlutuante from '../../components/WhasAppFlutuante/WhatsAppFlutuante.jsx';
+import FormWhatsApp from '../../components/FormWhatsApp/FormWhatsApp.jsx';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Diferenciais />
+      <FormWhatsApp />
       <Category />
       <Offers />
       <Cta />
