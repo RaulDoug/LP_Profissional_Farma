@@ -162,4 +162,9 @@
   .cta {
     margin: 1.2rem 3.8rem;
   }
+
+   .cta-img img {
+      width: 80%;
+      height: 80%;
+    }
 }

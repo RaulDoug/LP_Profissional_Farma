@@ -162,6 +162,7 @@
   border: none;
   font-size: 1.2rem;
   color: var(--cinza-dark);
+  width: 100%;
 }
 
 .form-item-container {
@@ -439,6 +440,8 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    width: 85%;
+    justify-self: center;
   }
 
   .form-checkbox {
