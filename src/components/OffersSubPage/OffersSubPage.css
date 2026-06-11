@@ -205,6 +205,18 @@
     grid-template-rows: repeat(auto);
   }
 
+  .offer-list-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    height: 300px;
+  }
+
+  .offer-item-img img {
+    height: 80%;
+    width: 60%;
+  }
+
   .offer-item-img p {
     font-size: 1.1rem;
   }
